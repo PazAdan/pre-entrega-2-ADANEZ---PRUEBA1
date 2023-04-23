@@ -124,20 +124,6 @@ button{
     border: 2px black solid;                                  
 }
 
-
-/*CONTACTANOS*/
-.main-contactanos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px
-}
-
-.back.img{
-    background-image: url('https://d3ugyf2ht6aenh.cloudfront.net/stores/260/113/products/7d745c15-fa7a-486d-8fd2-98063261b304-copy1-06afe512ab5375a30e16633451269122-1024-1024.jpg')
-}   
-
 /*NOVEDADES*/
 .grid-container{
     display: grid;
@@ -234,11 +220,6 @@ button{
    
 }
 
-/*QUIENES SOMOS*/
-#main-quienes-somos img{
-   width: 1000px;
-   height: 800px;
-}
 
 /*PRODUCTOS*/
 .flex-container-productos{
