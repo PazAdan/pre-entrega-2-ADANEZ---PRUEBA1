@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     min-height: 20vh;
     min-width: 100vh;
+  
 }
 
 .header a img{
@@ -19,12 +20,16 @@
     
 }
 
+.header a img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .header h1{
     display: flex;
     width: 800px;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 .nav ul{
@@ -33,6 +38,8 @@
     width: 800px;
     justify-content: space-evenly;
 }
+
+
 
 /*el subrayado lo da la etiqueta a, de link, se lo saco a esa*/
 .nav ul a{
@@ -44,19 +51,20 @@
 .footer{
     display: flex;
     background-color: rgb(129, 164, 129);
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     min-height: 10vh;
     min-width: 100vh;
-    align-items: center;
     margin-top: 15px;
-    font-weight: bold;
+    padding: 15px;
 }
 
 .footer ul{
     display: flex;
     list-style: none;
     width: 800px;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;  
+    
 }
 
 .main{
@@ -74,6 +82,7 @@
     margin: 20px;
 }
 
+
 .div-destacados{
     display: flex;
     height: 50px;
@@ -84,11 +93,7 @@
     background-color: rgb(225, 219, 203);
 }
 
-div-destacados h2{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
+
 
 .productos-destacados{
     display: flex;
@@ -117,7 +122,7 @@ div-destacados h2{
     padding: 5px
 }
 
-button{
+.button{
     background-color:  rgb(225, 219, 203);
     font-weight: bold;
     color: black;
@@ -136,7 +141,7 @@ button{
     "imagen4 imagen5 imagen6"
     "imagen7 imagen8 imagen9"
     ;
-    width: 1000px;
+    width: 900px;
     height: 600px;
     background-color: white;
     grid-gap: 10px;
@@ -159,6 +164,7 @@ button{
     transform: scale(1.1);
 
 }
+
 
 .imagen1{
     grid-area: imagen1;
@@ -207,39 +213,27 @@ button{
     background-image:url('../recursos/imagen9.jpg');
 }
 
-.h2{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 15px;
-    background-color: rgb(179, 174, 158);
-    background-image: linear-gradient(to right, rgb(179, 174, 158), rgb(225, 219, 203)); 
-    color: black;
-    max-height: 30px;
-    display: flex;
-    justify-content: center;
-   
-}
-
-
-/*PRODUCTOS*/
-.flex-container-productos{
-    display: flex
-}
-
-.flex-container-productos h2{
+h2{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(179, 174, 158);
     background-image: linear-gradient(to right, rgb(179, 174, 158), rgb(225, 219, 203)); 
     color: black;
-    max-height: 30px;
-    display: flex;
-    justify-content: center;
+    width: 30%;
+    height: 10%;
+    justify-content: left;
     align-items: center;
     margin: 10px;
     padding: 10px;    
    
 }
+
+/*PRODUCTOS*/
+.flex-container-productos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 .carousel-inner{
     display: flex;
@@ -257,21 +251,61 @@ button{
 
 #carouselExampleIndicators{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px;
     margin: 10px;
 }
 
-   
+/*CONTACTANOS*/
+.main-contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 10px;
+    background-image: url(../recursos/foto-contactanos.webp);
+    background-position: center;
+    min-height: 70vh;
+    min-width: 100vh;
+    padding: 50px;
+    margin: 50px;
+      
+}
 
 
-@media (max-width: 619px){
 
+.form{
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+    justify-content: space-evenly;
+    min-height: 20vh;
+    min-width: 50vh;
+    
+}
+
+/*QUIENES SOMOS*/
+.main-quienes-somos{
+    background-image: url(../recursos/foto-quienes-somos.webp);
+    min-height: 70vh;
+    min-width: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    max-height: 30px;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 10px;
+    padding: 10px;
+   }
+
+
+@media( max-width: 619px){
     .header{
-        justify-content: center;
+        justify-content: center
     }
     .nav ul{
-        width: 300px;
+        width:300px;
     }
 }
 
@@ -288,3 +322,7 @@ button{
         "imagen9 imagen9";
     }
     }
+
+img{
+    width: 100%;
+}
