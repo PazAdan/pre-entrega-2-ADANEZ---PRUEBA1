@@ -266,6 +266,7 @@ button{
 
 
 @media (max-width: 619px){
+
     .header{
         justify-content: center;
     }
