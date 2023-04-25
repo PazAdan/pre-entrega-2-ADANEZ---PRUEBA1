@@ -63,12 +63,12 @@
     display: flex;
     list-style: none;
     width: 800px;
-    justify-content: space-evenly;  
-    
+    justify-content: space-evenly;      
 }
 
 .main{
     min-height: 70vh;
+    min-width: 100vh;
 }
 
 .main.index{
