@@ -1,0 +1,74 @@
+.main.index{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-principal{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.div-destacados{
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 219, 203);
+}
+
+.productos-destacados{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.producto-1{    
+    display: flex;
+    flex-direction: column;
+    padding: 5px
+}
+
+.producto-1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.producto-2{ 
+    display: flex;
+    flex-direction: column;
+    padding: 5px
+}
+
+.producto-2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.producto-3{ 
+    display: flex;
+    flex-direction: column;
+    padding: 5px
+}
+
+.producto-3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.button{
+    background-color:  rgb(225, 219, 203);
+    font-weight: bold;
+    color: black;
+    border: 2px black solid;                      
+}
+
+.button:hover{
+    transform: scale(1.1);
+  
+}

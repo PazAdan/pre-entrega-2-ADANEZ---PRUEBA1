@@ -1,0 +1,12 @@
+.main-quienes-somos{
+    background-image: url(../recursos/foto-quienes-somos.webp);
+    min-height: 70vh;
+    min-width: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 10px;
+    padding: 10px;
+   }

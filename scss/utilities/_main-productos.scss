@@ -1,0 +1,26 @@
+.flex-container-productos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.carousel-inner{
+    display: flex;
+    margin: 50px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.carousel-inner img{
+   margin: 0 10px;
+   max-width: 150vh;
+   max-height: 150vh;
+   justify-content: center;  
+}
+
+#carouselExampleIndicators{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+}

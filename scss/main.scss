@@ -1,0 +1,33 @@
+/* agregar VARIABLES*/
+
+
+@import './utilities/reset';
+
+@import './utilities/header';
+
+@import'./utilities/footer';
+
+@import './utilities/main-index';
+
+@import './utilities/main-novedades';
+
+@import './utilities/main-productos';
+
+@import './utilities/main-contactanos';
+
+@import './utilities/main-quienes-somos';
+
+@import './utilities/mq';
+
+.main{
+    min-height: 70vh;
+    min-width: 100vh;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+

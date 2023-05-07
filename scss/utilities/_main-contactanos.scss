@@ -1,0 +1,37 @@
+.main-contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 10px;
+    background-image: url(../recursos/foto-contactanos.webp);
+    background-position: center;
+    min-height: 70vh;
+    min-width: 100vh;
+    padding: 50px;
+    margin: 50px;
+      
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column; 
+    align-content: center;
+    justify-content: space-evenly;
+    min-height: 20vh;
+    min-width: 50vh;
+    
+}
+
+.form input:focus{
+    background-color: rgb(206, 205, 205);
+}
+
+.form textarea:focus{
+    background-color: rgb(206, 205, 205);
+}
+.submit:hover{
+    transform: scale(1.1);
+}

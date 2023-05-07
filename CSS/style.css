@@ -27,7 +27,6 @@
 
 .header h1{
     display: flex;
-    width: 800px;
     justify-content: space-between;
     align-items: center;
 }
@@ -93,8 +92,6 @@
     background-color: rgb(225, 219, 203);
 }
 
-
-
 .productos-destacados{
     display: flex;
     justify-content: space-around;
@@ -110,23 +107,42 @@
     padding: 5px
 }
 
+.producto-1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .producto-2{ 
     display: flex;
     flex-direction: column;
     padding: 5px
 }
 
+.producto-2:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 .producto-3{ 
     display: flex;
     flex-direction: column;
     padding: 5px
 }
 
+.producto-3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .button{
     background-color:  rgb(225, 219, 203);
     font-weight: bold;
     color: black;
-    border: 2px black solid;                                  
+    border: 2px black solid;                      
+}
+
+.button:hover{
+    transform: scale(1.1);
+  
 }
 
 /*NOVEDADES*/
@@ -284,6 +300,17 @@ h2{
     
 }
 
+.form input:focus{
+    background-color: rgb(206, 205, 205);
+}
+
+.form textarea:focus{
+    background-color: rgb(206, 205, 205);
+}
+.submit:hover{
+    transform: scale(1.1);
+}
+
 /*QUIENES SOMOS*/
 .main-quienes-somos{
     background-image: url(../recursos/foto-quienes-somos.webp);
@@ -291,7 +318,6 @@ h2{
     min-width: 100vh;
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    max-height: 30px;
     display: grid;
     grid-template-columns: 1, 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -305,7 +331,21 @@ h2{
         justify-content: center
     }
     .nav ul{
-        width:300px;
+        width:100px;
+    }
+}
+
+@media(max-width: 1330px){
+    .header{
+        justify-content: center;
+    }     
+    
+}
+
+@media(max-width: 1050px){
+    .nav{
+        justify-content: center;
+        width: 100%;
     }
 }
 
