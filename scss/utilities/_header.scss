@@ -2,41 +2,33 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(205, 230, 205); 
+    background-color: color-ppal; 
     flex-wrap: wrap;
     min-height: 20vh;
     min-width: 100vh;
-  
+    a img{
+        width: 140px;        
+    }
+    a img:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav ul{
+        display: flex;
+        list-style: none;
+        width: 800px;
+        justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+        
 }
 
-.header a img{
-    width: 140px;
-    
-}
-
-.header a img:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.header h1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav ul{
-    display: flex;
-    list-style: none;
-    width: 800px;
-    justify-content: space-evenly;
-}
-
-
-
-/*el subrayado lo da la etiqueta a, de link, se lo saco a esa*/
-.nav ul a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
