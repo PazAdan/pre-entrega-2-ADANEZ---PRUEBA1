@@ -13,25 +13,20 @@
       
 }
 
-
-
 .form{
     display: flex;
     flex-direction: column; 
     align-content: center;
     justify-content: space-evenly;
     min-height: 20vh;
-    min-width: 50vh;
-    
+    input:focus{
+        background-color: rgb(206, 205, 205);
+    }
+    textarea:focus{
+        background-color: rgb(206, 205, 205);
+    }
 }
 
-.form input:focus{
-    background-color: rgb(206, 205, 205);
-}
-
-.form textarea:focus{
-    background-color: rgb(206, 205, 205);
-}
 .submit:hover{
     transform: scale(1.1);
 }

@@ -6,12 +6,14 @@
 
 .header{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgb(205, 230, 205); 
     flex-wrap: wrap;
     min-height: 20vh;
-    min-width: 100vh;
+    /* min-width: 100vh; */
+    /* reemplazamos min width por width 100% para que ocupe siempre el 100% del ancho de la pantalla */
+    width: 100%;
   
 }
 
@@ -31,11 +33,20 @@
     align-items: center;
 }
 
+/* modificacion nav */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .nav ul{
     display: flex;
     list-style: none;
-    width: 800px;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    /* utilizamos gap para hacer el espaciado entre cada item del ul reemplazando a justify content */
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 
@@ -49,20 +60,27 @@
 
 .footer{
     display: flex;
+    flex-wrap: wrap;
     background-color: rgb(129, 164, 129);
     justify-content: center;
     align-items: center;
     min-height: 10vh;
-    min-width: 100vh;
+    /* min-width: 100vh; */
+    width: 100%;
     margin-top: 15px;
     padding: 15px;
 }
 
-.footer ul{
+.footer nav ul{
     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
     list-style: none;
-    width: 800px;
-    justify-content: space-evenly;      
+    /* width: 800px; */
+    /* reemplazamos min width por width 100% para que ocupe siempre el 100% del ancho de la pantalla */
+    width: 100%;
+    justify-content: center;
+    align-items: center;  
 }
 
 .main{
@@ -282,7 +300,7 @@ h2{
     background-image: url(../recursos/foto-contactanos.webp);
     background-position: center;
     min-height: 70vh;
-    min-width: 100vh;
+    /* min-width: 100vh; */
     padding: 50px;
     margin: 50px;
       
@@ -296,7 +314,7 @@ h2{
     align-content: center;
     justify-content: space-evenly;
     min-height: 20vh;
-    min-width: 50vh;
+    /* min-width: 50vh; */
     
 }
 
@@ -315,7 +333,7 @@ h2{
 .main-quienes-somos{
     background-image: url(../recursos/foto-quienes-somos.webp);
     min-height: 70vh;
-    min-width: 100vh;
+    /* min-width: 100vh; */
     font-family: 'Courier New', Courier, monospace;
     color: black;
     display: grid;

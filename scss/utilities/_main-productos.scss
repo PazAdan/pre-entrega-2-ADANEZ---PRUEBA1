@@ -9,13 +9,12 @@
     margin: 50px;
     padding: 10px;
     justify-content: space-between;
-}
-
-.carousel-inner img{
-   margin: 0 10px;
-   max-width: 150vh;
-   max-height: 150vh;
-   justify-content: center;  
+    img{
+        margin: 0 10px;
+        max-width: 150vh;
+        max-height: 150vh;
+        justify-content: center;  
+     }
 }
 
 #carouselExampleIndicators{

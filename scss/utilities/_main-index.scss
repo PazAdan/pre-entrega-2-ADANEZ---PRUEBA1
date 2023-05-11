@@ -9,10 +9,10 @@
     margin: 20px;
 }
 
-
 .div-destacados{
     display: flex;
     height: 50px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
     justify-content: center;
@@ -32,43 +32,41 @@
 .producto-1{    
     display: flex;
     flex-direction: column;
-    padding: 5px
-}
-
-.producto-1:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+    padding: 5px;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }    
 }
 
 .producto-2{ 
     display: flex;
     flex-direction: column;
-    padding: 5px
+    padding: 5px;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
-.producto-2:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-}
 .producto-3{ 
     display: flex;
     flex-direction: column;
-    padding: 5px
-}
-
-.producto-3:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
+    padding: 5px;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 }
 
 .button{
     background-color:  rgb(225, 219, 203);
     font-weight: bold;
     color: black;
-    border: 2px black solid;                      
+    border: 2px black solid;    
+    .button:hover{
+        transform: scale(1.1);
+      
+    }                  
 }
 
-.button:hover{
-    transform: scale(1.1);
-  
-}
